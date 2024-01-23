@@ -1,37 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
+import { FOOTER_ITEMS } from "@/static";
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-interface FooterItem {
-    label: string
-    page: string
-};
-
-const FOOTER_ITEMS: Array<FooterItem> = [
-    {
-        label: "Features",
-        page: "#"
-    },
-    {
-        label: "Roadmap",
-        page: "#"
-    },
-    {
-        label: "How It Works",
-        page: "#"
-    },
-    {
-        label: "Blog",
-        page: "#"
-    },
-    {
-        label: "Privacy Policy",
-        page: "#"
-    }
-];
-
 
 const Footer = () => {
 

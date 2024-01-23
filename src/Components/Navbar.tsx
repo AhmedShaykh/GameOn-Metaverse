@@ -1,33 +1,10 @@
 "use client";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { NAV_ITEMS } from "@/static";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
-
-interface NavItem {
-    label: string
-    page: string
-};
-
-const NAV_ITEMS: Array<NavItem> = [
-    {
-        label: "Home",
-        page: "#"
-    },
-    {
-        label: "Projects",
-        page: "#"
-    },
-    {
-        label: "Staking",
-        page: "#"
-    },
-    {
-        label: "Pages",
-        page: "#"
-    }
-];
 
 const Navbar = () => {
 
