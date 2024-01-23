@@ -1,5 +1,6 @@
-import { ThemeProvider } from "@/Components/theme-provider";
+import { Providers } from "@/Components/ChakraProvider";
 import Navbar from "@/Components/Navbar";
+import Footer from "@/Components/Footer";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -15,17 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
+      <Providers>
         <body>
           <Navbar />
           {children}
+          <Footer />
         </body>
-      </ThemeProvider>
+      </Providers>
     </html>
   );
 };
