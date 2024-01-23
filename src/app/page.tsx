@@ -9,10 +9,10 @@ const Home = () => {
     return (
         <>
             <Header />
-            {/* <UpcomingIGO /> */}
-            {/* <PreviousIGO /> */}
-            {/* <Team /> */}
-            {/* <Participate /> */}
+            <UpcomingIGO />
+            <PreviousIGO />
+            <Team />
+            <Participate />
             <ApplyIGO />
         </>
     )

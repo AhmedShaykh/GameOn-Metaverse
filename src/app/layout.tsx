@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Gameon Metaverse",
-  description: "Gameon Metaverse"
+  title: "GameOn Metaverse",
+  description: "GameOn Metaverse"
 };
 
 export default function RootLayout({
