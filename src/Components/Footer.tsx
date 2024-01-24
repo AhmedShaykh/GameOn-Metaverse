@@ -11,7 +11,7 @@ const Footer = () => {
 
     const handleScroll = () => {
 
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 0) {
 
             setIsVisible(true);
 
@@ -58,7 +58,7 @@ const Footer = () => {
                             key={idx}
                             href={item.page}
                             className={
-                                "block lg:inline-block text-lg text-white hover:text-blue-500 cursor-pointer"
+                                "block lg:inline-block text-md text-white hover:text-blue-500 cursor-pointer"
                             }
                         >
                             {item.label}

@@ -86,7 +86,7 @@ export const PREVIGO_ITEMS = [
         price: "0.89",
         chain: "https://theme-land.com/gamefi/assets/img/content/ethereum.png",
         power: "86",
-        totalPrice: "1.06892"
+        totalPrice: "1.06"
     },
     {
         image: "https://theme-land.com/gamefi/assets/img/content/thumb_7.png",
@@ -94,7 +94,7 @@ export const PREVIGO_ITEMS = [
         price: "0.72",
         chain: "https://theme-land.com/gamefi/assets/img/content/binance.png",
         power: "97",
-        totalPrice: "0.9288"
+        totalPrice: "0.92"
     },
     {
         image: "https://theme-land.com/gamefi/assets/img/content/thumb_8.png",
@@ -102,7 +102,7 @@ export const PREVIGO_ITEMS = [
         price: "0.68",
         chain: "https://theme-land.com/gamefi/assets/img/content/solana.png",
         power: "64",
-        totalPrice: "2.87641"
+        totalPrice: "2.87"
     },
     {
         image: "https://theme-land.com/gamefi/assets/img/content/thumb_9.png",

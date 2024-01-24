@@ -5,33 +5,31 @@ import { FacebookIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 
 const UpcomingIGO = () => {
     return (
-        <div className="px-8 sm:px-20">
+        <div className="pb-4 px-8 sm:px-20">
             <div className="px-5 pt-6 pb-12 sm:pt-16 sm:pb-20 mx-auto">
-                <h2 className="text-2xl sm:text-3xl text-white font-bold sm:px-4 pb-3">
+                <h2 className="text-2xl sm:text-3xl text-white font-bold sm:px-4 pb-6">
                     Upcoming IGOs
                 </h2>
 
-                <div className="flex gap-x-4 my-4 sm:px-4">
+                <div className="flex flex-col xl:flex-row gap-8 xl:gap-5 my-4 px-0 sm:px-2">
                     {UPIGO_ITEMS.map((item, index) => (
                         <div
-                            className="bg-[#16182D] p-4 rounded-2xl lg:w-1/3"
+                            className="bg-[#16182D] p-4 rounded-2xl w-full xl:w-1/3"
                             key={index}
                         >
                             <div className="bg-[#16182D] flex justify-between my-2">
-                                <Image
-                                    className="rounded-xl bg-[#16182D]"
+                                <img
+                                    className="rounded-xl bg-[#16182D] w-16 h-16 sm:w-24 sm:h-24"
                                     src={item.image}
-                                    width={100}
-                                    height={100}
                                     alt="IGO Image"
                                 />
 
                                 <div className="bg-[#16182D] flex flex-col justify-center gap-3">
-                                    <h1 className="bg-[#16182D] text-xl font-bold">
+                                    <h1 className="bg-[#16182D] text-lg sm:text-xl font-bold">
                                         {item.name}
                                     </h1>
 
-                                    <h3 className="bg-[#16182D]">
+                                    <h3 className="bg-[#16182D] text-sm sm:text-md">
                                         Registeration In:
                                     </h3>
                                 </div>
@@ -40,8 +38,8 @@ const UpcomingIGO = () => {
                                     <Image
                                         className="bg-[#16182D]"
                                         src={item.chain}
-                                        width={26}
-                                        height={26}
+                                        width={25}
+                                        height={25}
                                         alt="BlockChain Image"
                                     />
                                 </div>
@@ -49,7 +47,7 @@ const UpcomingIGO = () => {
 
                             <div className="bg-[#16182D] flex justify-between my-8">
                                 <h5 className="p-2 rounded-xl text-sm">
-                                    <span className="text-slate-600">Total Raise: </span>
+                                    <span className="text-slate-600">Total: </span>
                                     ${item.raise}
                                 </h5>
 
@@ -69,18 +67,18 @@ const UpcomingIGO = () => {
                             </div>
 
                             <div className="bg-[#16182D] flex justify-between my-6">
-                                <h5 className="text-md bg-[#16182D]">
+                                <h5 className="text-sm sm:text-md bg-[#16182D]">
                                     0/${item.mecha} MECHA
                                 </h5>
 
-                                <h5 className="text-md bg-[#16182D]">
+                                <h5 className="text-sm sm:text-md bg-[#16182D]">
                                     0 BUSD
                                 </h5>
                             </div>
 
                             <div className="bg-[#16182D] flex justify-between mt-8 mb-4">
                                 <Button
-                                    className="py-4 px-6 text-md rounded-full cursor-pointer bg-gradient-to-r from-cyan-600 via-blue-800 to-purple-700"
+                                    className="py-3 px-4 sm:py-4 sm:px-6 text-sm sm:text-md rounded-full cursor-pointer bg-gradient-to-r from-cyan-600 via-blue-800 to-purple-700"
                                 >
                                     Participate
                                 </Button>
@@ -94,8 +92,8 @@ const UpcomingIGO = () => {
                         </div>
                     ))}
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 };
 
