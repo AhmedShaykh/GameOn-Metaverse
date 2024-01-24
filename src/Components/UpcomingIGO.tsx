@@ -1,5 +1,7 @@
 import { UPIGO_ITEMS } from "@/static";
+import { Button } from "./ui/button";
 import Image from "next/image";
+import { FacebookIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 
 const UpcomingIGO = () => {
     return (
@@ -45,7 +47,7 @@ const UpcomingIGO = () => {
                                 </div>
                             </div>
 
-                            <div className="bg-[#16182D] flex justify-around my-8">
+                            <div className="bg-[#16182D] flex justify-between my-8">
                                 <h5 className="p-2 rounded-xl text-sm">
                                     <span className="text-slate-600">Total Raise: </span>
                                     ${item.raise}
@@ -55,6 +57,39 @@ const UpcomingIGO = () => {
                                     <span className="text-slate-600">Value: </span>
                                     ${item.value}
                                 </h5>
+                            </div>
+
+                            <div className="w-full h-6 mb-4 bg-gray-200 rounded-full">
+                                <div
+                                    className="h-6 text-md font-medium bg-blue-600 rounded-full text-center"
+                                    style={{ width: `${item.widthStyle}` }}
+                                >
+                                    {item.width}
+                                </div>
+                            </div>
+
+                            <div className="bg-[#16182D] flex justify-between my-6">
+                                <h5 className="text-md bg-[#16182D]">
+                                    0/${item.mecha} MECHA
+                                </h5>
+
+                                <h5 className="text-md bg-[#16182D]">
+                                    0 BUSD
+                                </h5>
+                            </div>
+
+                            <div className="bg-[#16182D] flex justify-between mt-8 mb-4">
+                                <Button
+                                    className="py-4 px-6 text-md rounded-full cursor-pointer bg-gradient-to-r from-cyan-600 via-blue-800 to-purple-700"
+                                >
+                                    Participate
+                                </Button>
+
+                                <div className="flex justify-center items-center gap-3 bg-[#16182D]">
+                                    <FacebookIcon className="bg-[#16182D]" />
+                                    <LinkedinIcon className="bg-[#16182D]" />
+                                    <TwitterIcon className="bg-[#16182D]" />
+                                </div>
                             </div>
                         </div>
                     ))}

@@ -14,7 +14,7 @@ const Team = () => {
                     Our Team
                 </h2>
 
-                <div className="flex gap-3 lg:gap-0 my-4">
+                <div className="flex px-2 gap-3 lg:gap-0 my-4">
                     {TEAM_ITEMS.map((item, index) => (
                         <div key={index} className="px-2 py-4 w-full lg:w-1/3">
                             <div className="h-full w-full bg-[#16182D] px-2 sm:px-3 pt-12 pb-16 rounded-lg text-center">

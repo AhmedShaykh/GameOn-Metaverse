@@ -121,7 +121,9 @@ export const UPIGO_ITEMS = [
         chain: "https://theme-land.com/gamefi/assets/img/content/ethereum.png",
         raise: "100k",
         value: "2.8M",
-        mecha: "100,069"
+        mecha: "100,069",
+        width: "27%",
+        widthStyle: "27%"
     },
     {
         image: "https://theme-land.com/gamefi/assets/img/content/thumb_2.png",
@@ -129,7 +131,9 @@ export const UPIGO_ITEMS = [
         chain: "https://theme-land.com/gamefi/assets/img/content/solana.png",
         raise: "85k",
         value: "1.9M",
-        mecha: "94,752"
+        mecha: "94,752",
+        width: "42%",
+        widthStyle: "42%"
     },
     {
         image: "https://theme-land.com/gamefi/assets/img/content/thumb_3.png",
@@ -137,6 +141,8 @@ export const UPIGO_ITEMS = [
         chain: "https://theme-land.com/gamefi/assets/img/content/binance.png",
         raise: "69k",
         value: "3.2M",
-        mecha: "87,074"
+        mecha: "87,074",
+        width: "25%",
+        widthStyle: "25%"
     }
 ];
