@@ -15,12 +15,14 @@ const Navbar = () => {
             <div className="justify-between md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-6 md:py-8 md:block">
-                        <Image
-                            src="https://theme-land.com/gamefi/assets/img/logo/logo.png"
-                            width={29}
-                            height={29}
-                            alt="logo"
-                        />
+                        <Link href={"/"}>
+                            <Image
+                                src="https://theme-land.com/gamefi/assets/img/logo/logo.png"
+                                width={29}
+                                height={29}
+                                alt="logo"
+                            />
+                        </Link>
 
                         <div className="md:hidden">
                             <button
@@ -35,7 +37,8 @@ const Navbar = () => {
 
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}
+                        className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 
+                        ${navbar ? "block" : "hidden"}`}
                     >
                         <div className="flex flex-col items-center justify-center space-y-8 pb-4 md:pb-0 md:flex-row md:space-x-10 md:space-y-0 font-medium">
                             {NAV_ITEMS.map((item, idx) => {

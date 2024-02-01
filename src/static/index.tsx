@@ -1,19 +1,19 @@
 export const NAV_ITEMS = [
     {
         label: "Home",
-        page: "#"
+        page: "/"
     },
     {
-        label: "Projects",
-        page: "#"
+        label: "Team",
+        page: "/team"
     },
     {
-        label: "Staking",
-        page: "#"
+        label: "Swap",
+        page: "/swap"
     },
     {
-        label: "Pages",
-        page: "#"
+        label: "Contact",
+        page: "/contact"
     }
 ];
 
