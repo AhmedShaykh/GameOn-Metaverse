@@ -1,7 +1,6 @@
 import { Providers } from "@/Components/ChakraProvider";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import Template from "./template";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -11,17 +10,16 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children }: Readonly<{
-    children: React.ReactNode;
-  }>) {
+  children
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <Providers>
         <body>
           <Navbar />
-          <Template>
-            {children}
-          </Template>
+          {children}
           <Footer />
         </body>
       </Providers>
