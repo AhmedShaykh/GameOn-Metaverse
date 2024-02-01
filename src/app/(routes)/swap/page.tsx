@@ -1,10 +1,7 @@
-import React from "react";
+import SwapPage from "@/Components/SwapPage";
 
 const Swap = () => {
-    return (
-        <div>
-        </div>
-    )
+    return <SwapPage />
 };
 
 export default Swap;
