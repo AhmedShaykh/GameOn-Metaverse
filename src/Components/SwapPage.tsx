@@ -1,4 +1,5 @@
 "use client";
+import Swapper from "./Swapper";
 import { Heading } from "@chakra-ui/react";
 
 const SwapPage = () => {
@@ -12,7 +13,9 @@ const SwapPage = () => {
             >
                 Swap Token
             </Heading>
-        </div>
+
+            <Swapper />
+        </div >
     )
 };
 
