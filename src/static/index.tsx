@@ -146,3 +146,21 @@ export const UPIGO_ITEMS = [
         widthStyle: "25%"
     }
 ];
+
+export const CONTACT_ITEMS = [
+    {
+        title: "Gameon Inc.",
+        icon: "/Location.svg",
+        details: "2709 Euclid Avenue, Irvine, California"
+    },
+    {
+        title: "Call Us",
+        icon: "/Call.svg",
+        details: "+805-298-8971"
+    },
+    {
+        title: "Reach Us",
+        icon: "/Mail.svg",
+        details: "info@company.com"
+    }
+];
