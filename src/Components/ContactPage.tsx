@@ -15,7 +15,7 @@ const ContactPage = () => {
                 Contact Us
             </Heading>
 
-            <div className="mt-[5.4rem] md:mt-32 flex flex-col lg:flex-row gap-8 px-5 sm:px-20">
+            <div className="mt-[5.4rem] md:mt-32 flex flex-col lg:flex-row gap-8 px-1 sm:px-20">
                 <Form />
                 <Grid />
             </div>

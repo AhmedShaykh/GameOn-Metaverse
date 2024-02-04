@@ -4,8 +4,8 @@ import { ArrowDownUp, ArrowLeftRight } from "lucide-react";
 
 const Swapper = () => {
     return (
-        <div className="mt-[5.4rem] md:mt-32 px-5 sm:px-16 pb-[2.5rem]">
-            <div className="py-10 px-4 md:p-10 bg-[#16182D] rounded-2xl">
+        <div className="mt-[5.4rem] md:mt-32 px-1 sm:px-16 pb-[2.5rem]">
+            <div className="py-8 px-5 md:p-10 bg-[#16182D] rounded-2xl">
                 <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-2 bg-[#16182D] rounded-2xl my-1 md:my-3 mx-2 md:mx-4">
                     <div className="bg-[#16182D] my-2 lg:my-1">
                         <div className="flex lg:flex-row gap-3 lg:gap-0 flex-col items-center bg-[#16182D]">

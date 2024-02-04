@@ -4,7 +4,7 @@ import { Button } from "@/Components/ui/button";
 const Form = () => {
     return (
         <div className="grid col-12 md:col-7 w-full">
-            <div className="py-5 px-6 md:p-12 bg-[#16182D] rounded-2xl">
+            <div className="py-5 px-7 md:p-12 bg-[#16182D] rounded-2xl">
                 <h2 className="mb-10 mt-6 md:mt-2 text-2xl sm:text-3xl text-white font-bold bg-[#16182D]">
                     Get In Touch!
                 </h2>

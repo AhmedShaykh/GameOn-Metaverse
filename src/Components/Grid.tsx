@@ -7,7 +7,7 @@ const Grid = () => {
 
                 {CONTACT_ITEMS.map((item, index) => (
                     <div
-                        className="py-4 px-5 md:p-9 bg-[#16182D] rounded-2xl"
+                        className="py-4 px-6 md:p-9 bg-[#16182D] rounded-2xl"
                         key={index}
                     >
                         <div className="flex gap-4 md:gap-5 items-center bg-[#16182D]">
