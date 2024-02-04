@@ -6,7 +6,7 @@ import { FacebookIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 const UpcomingIGO = () => {
     return (
         <div className="pb-4 px-8 sm:px-20">
-            <div className="px-5 pt-6 pb-12 sm:pt-16 sm:pb-20 mx-auto">
+            <div className="px-5 pt-6 pb-12 sm:pt-16 sm:pb-18 mx-auto">
                 <h2 className="text-2xl sm:text-3xl text-white font-bold sm:px-4 pb-6">
                     Upcoming IGOs
                 </h2>
