@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 const Header = () => {
     return (
         <div className="py-12 px-8">
-            <h3 className="text-center text-blue-700 py-4 text-lg">
+            <h3 className="text-center text-blue-700 py-5 text-lg">
                 GAMEON
             </h3>
 

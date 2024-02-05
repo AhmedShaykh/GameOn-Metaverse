@@ -1,6 +1,7 @@
 "use client";
 import { Heading } from "@chakra-ui/react";
 import Team from "./Team";
+import FAQ from "./FAQ";
 
 const TeamPage = () => {
     return (
@@ -15,6 +16,7 @@ const TeamPage = () => {
             </Heading>
 
             <Team />
+            <FAQ />
         </div>
     )
 };

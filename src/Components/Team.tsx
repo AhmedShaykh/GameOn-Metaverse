@@ -9,11 +9,11 @@ import Image from "next/image";
 const Team = () => {
     return (
         <div className="px-8 sm:px-20">
-            <div className="px-5 pt-5 pb-12 sm:pt-20 sm:pb-20 mx-auto">
+            <div className="pt-5 pb-12 sm:py-12 mx-auto">
                 <div className="flex flex-wrap px-0 sm:px-2 gap-3 lg:gap-0 my-4">
                     {TEAM_ITEMS.map((item, index) => (
-                        <div key={index} className="px-0 sm:px-2 py-4 w-full lg:w-1/3">
-                            <div className="bg-[#16182D] px-2 sm:px-3 pt-12 pb-16 rounded-2xl text-center">
+                        <div key={index} className="px-0 sm:px-2 w-full lg:w-1/3">
+                            <div className="bg-[#16182D] px-2 sm:px-3 pt-12 pb-16 rounded-[2rem] text-center">
                                 <div className="inline-flex justify-center items-center mb-5 flex-shrink-0 bg-[#16182D]">
                                     <Image
                                         className="p-2 bg-gradient-to-r from-cyan-600 via-blue-800 to-purple-700 text-transparent rounded-lg"
