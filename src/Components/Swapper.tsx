@@ -36,7 +36,7 @@ const Swapper = () => {
                             <ArrowLeftRight className="bg-[#16182D]" />
                         </Button>
 
-                        <Button className="block lg:hidden p-2 rounded-full cursor-pointer bg-[#16182D] border border-gray-700 hover:border-blue-500">
+                        <Button className="block lg:hidden p-2 rounded-full cursor-pointer bg-[#16182D] border border-gray-700 hover:border-blue-500 mb-6">
                             <ArrowDownUp className="bg-[#16182D]" />
                         </Button>
                     </div>

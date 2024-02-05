@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 const ApplyIGO = () => {
     return (
-        <div className="px-8 sm:px-20">
+        <div className="px-6 sm:px-20">
             <div className="mx-auto flex px-5 py-12 sm:py-24 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg xl:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 flex justify-center items-center">
                     <img

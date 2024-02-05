@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Participate = () => {
     return (
-        <div className="px-8 sm:px-20">
-            <div className="px-5 pt-6 pb-12 sm:pt-16 sm:pb-20 mx-auto">
+        <div className="px-5 sm:px-20">
+            <div className="px-5 pt-6 pb-12 sm:pt-20 sm:pb-[4.4rem] mx-auto">
                 <h2 className="text-2xl sm:text-3xl text-white font-bold sm:px-4">
                     How To Participate
                 </h2>

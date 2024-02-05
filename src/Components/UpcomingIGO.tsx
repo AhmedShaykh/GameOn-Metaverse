@@ -5,8 +5,8 @@ import { FacebookIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 
 const UpcomingIGO = () => {
     return (
-        <div className="pb-4 px-8 sm:px-20">
-            <div className="px-5 pt-6 pb-12 sm:pt-16 sm:pb-18 mx-auto">
+        <div className="pb-4 px-5 sm:px-20">
+            <div className="px-5 pt-6 pb-12 sm:pt-16 sm:pb-20 mx-auto">
                 <h2 className="text-2xl sm:text-3xl text-white font-bold sm:px-4 pb-6">
                     Upcoming IGOs
                 </h2>
@@ -14,7 +14,7 @@ const UpcomingIGO = () => {
                 <div className="flex flex-col xl:flex-row gap-8 xl:gap-5 my-4 px-0 sm:px-2">
                     {UPIGO_ITEMS.map((item, index) => (
                         <div
-                            className="bg-[#16182D] p-4 rounded-2xl w-full xl:w-1/3"
+                            className="bg-[#16182D] p-5 rounded-2xl w-full xl:w-1/3"
                             key={index}
                         >
                             <div className="bg-[#16182D] flex justify-between my-2">
