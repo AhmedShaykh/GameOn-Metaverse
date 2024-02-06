@@ -4,12 +4,15 @@ import { NAV_ITEMS } from "@/static";
 import ConnectWallet from "./ConnectWallet";
 import Wrapper from "./Wrapper";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
+
+    const pathname = usePathname();
 
     return (
         <div className="bg-[#090A1A] w-full mx-auto px-8 sm:px-20 sticky top-0 z-50 shadow shadow-slate-900">
@@ -48,7 +51,7 @@ const Navbar = () => {
                                             key={idx}
                                             href={item.page}
                                             className={
-                                                "block lg:inline-block text-white hover:text-blue-500 cursor-pointer"
+                                                `block lg:inline-block ${item.page === pathname ? "text-blue-600" : "text-white"} hover:text-blue-600 cursor-pointer`
                                             }
                                             onClick={() => setNavbar(!navbar)}
                                         >

@@ -23,7 +23,7 @@ import {
 import { publicProvider } from "wagmi/providers/public";
 import { ChakraProvider } from "@chakra-ui/react";
 
-const projectId = "WALLET_KEY";
+const projectId = "9d560e0643ad6988a4ecc613f3fc0f3d";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
     [polygonMumbai, sepolia, lineaTestnet],
