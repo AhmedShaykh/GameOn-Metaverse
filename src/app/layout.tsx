@@ -1,10 +1,10 @@
-import { Providers } from "@/Components/ChakraProvider";
+import { Providers } from "@/Components/Providers";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import type { Metadata } from "next";
+import "@rainbow-me/rainbowkit/styles.css";
 import "./globals.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "GameOn Metaverse",
   description: "GameOn Metaverse"
 };
@@ -16,13 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Providers>
-        <body>
+      <body className="bg-[#090A1A]">
+        <Providers>
           <Navbar />
           {children}
           <Footer />
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 };

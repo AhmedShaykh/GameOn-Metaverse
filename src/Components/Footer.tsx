@@ -41,7 +41,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className="w-full py-8">
+        <div className="bg-[#090A1A] w-full py-8">
             <Wrapper>
                 <div className="flex justify-center items-center">
                     <Image
