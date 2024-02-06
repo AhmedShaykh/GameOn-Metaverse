@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className="py-12 px-7">
             <Wrapper>
-                <h3 className="text-center text-blue-700 pt-12 pb-5 text-lg">
+                <h3 className="text-center text-blue-700 pt-8 md:pt-12 pb-5 text-lg">
                     GAMEON
                 </h3>
 

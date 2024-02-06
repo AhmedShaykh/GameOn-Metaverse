@@ -65,6 +65,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
             <RainbowKitProvider
                 chains={chains}
                 appInfo={demoAppInfo}
+                modalSize="compact"
                 theme={darkTheme()}
             >
                 <ChakraProvider>{children}</ChakraProvider>
