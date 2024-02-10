@@ -1,10 +1,13 @@
 "use client";
 import { useState } from "react";
 import { NAV_ITEMS } from "@/static";
-import ConnectWallet from "./ConnectWallet";
 import Wrapper from "./Wrapper";
+import { Button } from "@/Components/ui/button";
+import { formatAddress } from "@/lib/utils";
+import { Popover, PopoverContent, PopoverTrigger } from "@/Components/ui/popover";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
+import { useSDK } from "@metamask/sdk-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,6 +16,30 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
 
     const pathname = usePathname();
+
+    const { sdk, connected, connecting, account } = useSDK();
+
+    const connect = async () => {
+
+        try {
+
+            await sdk?.connect();
+
+        } catch (err) {
+
+            console.warn(`No Accounts Found`, err);
+
+        }
+    };
+
+    const disconnect = () => {
+
+        if (sdk) {
+
+            sdk.terminate();
+
+        }
+    };
 
     return (
         <div className="bg-[#090A1A] w-full mx-auto px-8 sm:px-20 sticky top-0 z-50 shadow shadow-slate-900">
@@ -60,7 +87,33 @@ const Navbar = () => {
                                     )
                                 })}
 
-                                <ConnectWallet />
+                                {connected ? (
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Button className="bg-gradient-to-r from-cyan-600 via-blue-800 to-purple-700 text-white p-5">
+                                                {formatAddress(account)}
+                                            </Button>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent className="mt-8 bg-zinc-900 w-30 rounded-md shadow right-0 z-70 top-10 py-5 px-5">
+                                            <Button
+                                                className="text-center bg-[#F05252] hover:bg-[#F05252]"
+                                                onClick={disconnect}
+                                            >
+                                                Disconnect
+                                            </Button>
+                                        </PopoverContent>
+                                    </Popover>
+                                ) : (
+                                    <>
+                                        <Button
+                                            className="py-4 px-6 text-md rounded-full cursor-pointer bg-gradient-to-r from-cyan-600 via-blue-800 to-purple-700"
+                                            disabled={connecting}
+                                            onClick={connect}
+                                        >
+                                            Wallet Connect
+                                        </Button>
+                                    </>)}
                             </div>
                         </div>
                     </div>

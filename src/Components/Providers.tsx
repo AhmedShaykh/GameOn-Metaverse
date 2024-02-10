@@ -1,75 +1,25 @@
 "use client";
-import {
-    RainbowKitProvider,
-    getDefaultWallets,
-    connectorsForWallets,
-    darkTheme
-} from "@rainbow-me/rainbowkit";
-import {
-    argentWallet,
-    trustWallet,
-    ledgerWallet
-} from "@rainbow-me/rainbowkit/wallets";
-import {
-    configureChains,
-    createConfig,
-    WagmiConfig
-} from "wagmi";
-import {
-    polygonMumbai,
-    sepolia,
-    lineaTestnet
-} from "wagmi/chains";
-import { publicProvider } from "wagmi/providers/public";
+import { MetaMaskProvider } from "@metamask/sdk-react";
 import { ChakraProvider } from "@chakra-ui/react";
 
-const projectId = "9d560e0643ad6988a4ecc613f3fc0f3d";
+const Providers = ({ children }: { children: React.ReactNode }) => {
 
-const { chains, publicClient, webSocketPublicClient } = configureChains(
-    [polygonMumbai, sepolia, lineaTestnet],
-    [publicProvider()]
-);
+    const host = typeof window !== "undefined" ? window.location.host : "defaultHost";
 
-const { wallets } = getDefaultWallets({
-    appName: "GameOn Metaverse",
-    projectId,
-    chains,
-});
+    const sdkOptions = {
+        logging: { developerMode: false },
+        checkInstallationImmediately: false,
+        dappMetadata: {
+            name: "GameOn Metaverse",
+            url: host
+        }
+    };
 
-const demoAppInfo = {
-    appName: "GameOn Metaverse"
-};
-
-const connectors = connectorsForWallets([
-    ...wallets,
-    {
-        groupName: "Other",
-        wallets: [
-            argentWallet({ projectId, chains }),
-            trustWallet({ projectId, chains }),
-            ledgerWallet({ projectId, chains })
-        ]
-    }
-]);
-
-const wagmiConfig = createConfig({
-    autoConnect: true,
-    connectors,
-    publicClient,
-    webSocketPublicClient,
-});
-
-export function Providers({ children }: { children: React.ReactNode }) {
     return (
-        <WagmiConfig config={wagmiConfig}>
-            <RainbowKitProvider
-                chains={chains}
-                appInfo={demoAppInfo}
-                modalSize="compact"
-                theme={darkTheme()}
-            >
-                <ChakraProvider>{children}</ChakraProvider>
-            </RainbowKitProvider>
-        </WagmiConfig>
+        <MetaMaskProvider debug={false} sdkOptions={sdkOptions}>
+            <ChakraProvider>{children}</ChakraProvider>
+        </MetaMaskProvider>
     )
 };
+
+export default Providers;

@@ -1,10 +1,10 @@
-import { Providers } from "@/Components/Providers";
+import Providers from "@/Components/Providers";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import "@rainbow-me/rainbowkit/styles.css";
+import { Metadata } from "next";
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "GameOn Metaverse",
   description: "GameOn Metaverse"
 };
